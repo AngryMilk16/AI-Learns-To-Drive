@@ -33,9 +33,17 @@ def map():
     pygame.draw.line(Win, wall_colour, (550, 250), (650, 350), 5)
     pygame.draw.line(Win, wall_colour, (650, 350), (650, 600), 4)
     pygame.draw.line(Win, wall_colour, (650, 600), (700, 650), 5)
-    pygame.draw.line(Win, wall_colour, (550, 600), (650, 700), 5)
-    
-    
+    pygame.draw.line(Win, wall_colour, (550, 600), (675, 725), 5)
+    pygame.draw.line(Win, wall_colour, (675, 725), (800, 725), 4)
+    pygame.draw.line(Win, wall_colour, (800, 725), (900, 650), 5)
+    pygame.draw.line(Win, wall_colour, (900, 650), (900, 200), 4)
+    pygame.draw.line(Win, wall_colour, (900, 200), (800, 75), 5)
+    pygame.draw.line(Win, wall_colour, (800, 75), (400, 75), 4)
+    pygame.draw.line(Win, wall_colour, (700, 650), (750, 650), 4)
+    pygame.draw.line(Win, wall_colour, (750, 650), (800, 615), 5)
+    pygame.draw.line(Win, wall_colour, (800, 615), (800, 250), 4)
+    pygame.draw.line(Win, wall_colour, (800, 250), (750, 175), 5)
+    pygame.draw.line(Win, wall_colour, (750, 175), (400, 175), 4)
 
     pygame.display.update()
 
