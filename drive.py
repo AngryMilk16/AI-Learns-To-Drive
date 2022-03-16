@@ -6,6 +6,7 @@ pygame.init()
 back_colour = (255, 255, 255)
 wall_colour = (0, 0, 0)
 start_colour = (0, 255, 0)
+car_colour = (75, 57, 79)
 Win = pygame.display.set_mode((1000, 900))
 pygame.display.set_caption("Drive")
 Win.fill(back_colour)
@@ -50,18 +51,37 @@ def map():
 
 class Car:
 
-    def cars():
+    def car_model():
+
+        pygame.draw.rect(Win, car_colour, (112, 100, 22, 35))
+
+    def car_move():
         pass
+
+    def car_collision():
+        pass
+
+    car_model()
+    car_move()
+    car_collision()
+    pygame.display.update
+
 
 def main():
     
+    clock = pygame.time.Clock()
     run = True
+
     while run:
+        
+        clock.tick(60)
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
 
         map()
+        Car()
 
     pygame.quit()
             
